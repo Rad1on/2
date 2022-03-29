@@ -1,6 +1,53 @@
+/* Основная палитра */
+/* Цвет основного текста #212121 */
+/* Вторичный цевт текста #757575 */
+/* Цвет логотипа #2196F3 */
+
+/* Основной цвет фона #E5E5E5 */
+/* Вторичный цвет фона (серый) #2F303A */
+/* вторичный цвет фона (иконки) #EEEEEE */
+/* Цвет фона (наша команда) #F5F4FA */
+/* Акцент #2196F3 (синний?) */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #e5e5e5;
+  color: #212121;
 }
 
-:root {
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* site nav */
+
+header {
+  background: #ffffff;
+}
+
+.logo {
+  color: #2196f3;
+}
+.second-part-logo {
+  color: #212121;
+}
+.site-nav {
+  color: #212121;
+}
+.site-nav :hover,
+.site-nav :focus {
+  color: #2196f3;
+}
+.header-address :hover,
+.header-address :active {
+  color: #2196f3;
+}
+/* Hero */
+.hero {
+  color: #ffffff;
+
+  background-color: #2f303a;
 }
