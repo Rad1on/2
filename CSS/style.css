@@ -8,11 +8,25 @@
 /* вторичный цвет фона (иконки) #EEEEEE */
 /* Цвет фона (наша команда) #F5F4FA */
 /* Акцент #2196F3 (синний?) */
+
+:root {
+  /*Переменные цветовой гаммы шрифтов*/
+  --main-text-color: #212121;
+  --hero-text-color: #ffffff;
+  --secondary-text-color: #757575;
+  --logo-text-color: #2196f3;
+  --hover-focus-color: #2196f3;
+  /*Переменные цветовой гаммы фона*/
+  --main-background-color: #e5e5e5;
+  --secondary-background-color: #2f303a;
+  --third-background-color: ;
+  --accent-color: ;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: #e5e5e5;
-  color: #212121;
+  background-color: var(--main-background-color);
 }
 
 ul {
@@ -28,26 +42,227 @@ header {
   background: #ffffff;
 }
 
-.logo {
+nav .logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
   color: #2196f3;
 }
-.second-part-logo {
-  color: #212121;
+.studio {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
 }
-.site-nav {
-  color: #212121;
+.portfolio {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+.contact {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+.email {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.number {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
 }
 .site-nav :hover,
 .site-nav :focus {
-  color: #2196f3;
+  color: var(--hover-focus-color);
 }
 .header-address :hover,
 .header-address :active {
-  color: #2196f3;
+  color: var(--hover-focus-color);
 }
+/* studio //////////main///////// style  */
 /* Hero */
 .hero {
-  color: #ffffff;
-
   background-color: #2f303a;
+}
+.hero-tittle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  color: var(--hero-text-color);
+}
+.hero-link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--hero-text-color);
+}
+
+/* feature */
+
+.feature {
+  opacity: 0;
+}
+.feature > h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.feature-list p {
+  ont-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* studio-section */
+.doing-tittle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+/*our team*/
+.team > h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.team > p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* Portfolio //////////main///////// style  */
+.filter {
+  font-size: 0px;
+}
+.position {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+.position:hover {
+  color: #ffffff;
+  background-color: var(--hover-focus-color);
+}
+
+.all {
+  background-color: var(--main-background-color);
+}
+.all-one > h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+  color: var(--main-text-color);
+}
+.all-one > p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+/* ///////footer////// */
+.footer {
+  background-color: var(--secondary-background-color);
+}
+.footer .logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+.footer p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
