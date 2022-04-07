@@ -48,44 +48,35 @@ header {
   background: #ffffff;
 }
 
-nav .logo {
-  font-family: "Raleway";
+.logo{
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: #2196f3;
+  letter-spacing: 0.03em; 
 }
-.site-nav a{
+nav .logo{
+  color: inherit;
+}
+.first-part-logo{
+  color: var(--logo-text-color);
+}
+.site-nav a,
+.header-address a{
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
+.site-nav a{color: var(--main-text-color)}
+.header-address a{color: var(--secondary-text-color)}
 
-.header-address a{
- font-weight: 500;
-  font-size: 14px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
-}
+.site-nav :hover {color: var(--hover-focus-color);}
+.site-nav :focus {color: var(--hover-focus-color);}
 
-.site-nav :hover{
-  color: var(--hover-focus-color);
-}
-.site-nav :focus{
-  color: var(--hover-focus-color);
-}
-
-
-.header-address :hover {
-  color: var(--hover-focus-color);
-}
-.header-address :focus {
-  color: var(--hover-focus-color);
-}
+.header-address :hover {color: var(--hover-focus-color);}
+.header-address :focus {color: var(--hover-focus-color);}
 
 /* studio //////////main///////// style  */
 /* Hero */
@@ -131,8 +122,8 @@ nav .logo {
 }
 
 /* studio-section */
-.doing-tittle {
-  
+.doing-tittle,
+.team-tittle {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -140,8 +131,8 @@ nav .logo {
   letter-spacing: 0.03em;
 }
 /*our team*/
+}
 .team > h3 {
- 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -200,28 +191,19 @@ nav .logo {
   background-color: var(--secondary-background-color);
 }
 .footer .logo {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  /* identical to box height */
-  letter-spacing: 0.03em;
-  color: #2196f3;
-}
-.footer p {
-  
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  /* or 171% */
-  letter-spacing: 0.03em;
   color: #ffffff;
 }
-.footer a {
+
+.footer{
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   /* or 171% */
   letter-spacing: 0.03em;
+}
+.footer a{
   color: rgba(255, 255, 255, 0.6);
+}
+.footer p{
+  color: #ffffff;
 }
