@@ -72,8 +72,9 @@ nav .logo{
 .site-nav a{color: var(--main-text-color)}
 .header-address a{color: var(--secondary-text-color)}
 
-.site-nav :hover {color: var(--hover-focus-color);}
-.site-nav :focus {color: var(--hover-focus-color);}
+.site-nav :hover, 
+.site-nav :focus {
+color: var(--hover-focus-color);}
 
 .header-address :hover {color: var(--hover-focus-color);}
 .header-address :focus {color: var(--hover-focus-color);}
@@ -82,21 +83,20 @@ nav .logo{
 /* Hero */
 .hero {
   background-color: #2f303a;
+  text-align: center;
 }
 .hero-tittle {
-  
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
   color: var(--hero-text-color);
-  text-align: center;
 }
-.hero-link {
+.hero-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   color: var(--hero-text-color);
-  text-align: center;
+  background-color: var(--hover-focus-color);
 }
 
 /* feature */
