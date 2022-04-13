@@ -111,18 +111,27 @@ color: var(--hover-focus-color);}
 
 /* feature */
 
-.feature {
+.feature-tittle {
   opacity: 0;
+ font-size: 0px;
+  padding: 0px 0px;
+  margin-bottom: 94px;
 }
-.feature > h3 {
-  
+.feature-one,
+.feature-one-text{
+width: 270px;
+}
+.feature-one {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.4px;
+  line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  
 }
-.feature-list p {
+.feature-one-text {
   
   font-weight: 400;
   font-size: 14px;
