@@ -107,6 +107,7 @@ color: var(--hover-focus-color);}
   border-radius: 4px;
   padding: 10px 32px;
   margin-bottom: 200px;
+  cursor: pointer;
 }
 
 /* feature */
@@ -183,6 +184,7 @@ main{
   border-radius: 4px;
   padding: 6px 22px;
   color: var(#F5F4FA);
+  cursor: pointer;
 }
 .position:hover {
   color: #ffffff;
@@ -229,4 +231,8 @@ main{
 }
 .footer p{
   color: #ffffff;
+}
+.footer-adress:hover,
+.footer-adress:focus{
+  color: var(--hover-focus-color);
 }
